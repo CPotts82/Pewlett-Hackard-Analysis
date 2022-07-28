@@ -8,6 +8,28 @@ Data Source: departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, sal
 Software: SQL, Postgres/pgAdmin 11.16
 
 ## Results
+### Number of Employees Retiring By Title
+For this analysis 3 different queries were made to find and filter the results down to the final retiring_titles table. 
+- The first query created the "retirement_titles table:
+  - it pulled pertinent information from the employees table (created from employees.csv) and also from the titles table (created from titles.csv) and joined the tables
+  - This information was filtered by birhtdates between 01-01-1952 and 12-31-1955
+  - Then this information was ordered by the employee number. 
+
+- The second query created that unique_titles table:
+  - Using the Distint On statement filtered the multiple titles that some employees had attached to their employee number down to the most recent title
+  - This query also filtered out any employees that were no longer employeed by the company
+
+- The third query created the final retiring_titles table:
+  - Using the Select Count statement, the employee numbers of the unique titles were counted
+  - Using Group by, the table was grouped by titles
+  - Using Order By, the table was ordered in descending order
+
+This last table, retiring_titles, is where we found our total number of retirement ready employees organized by their company title. (This table is posted in teh summary section below) Please see the images of the three queries that were created to transform and analyze the date to create our retiring_titles table:
+
+
+
+
+### Employees Eligible for Mentorship Program
 
 ## Summary 
 ### Number of Roles to be Filled
