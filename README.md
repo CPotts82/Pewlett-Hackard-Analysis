@@ -3,8 +3,8 @@
 The objective of this analysis was to help the company, Pewlett Hackard, prepare for the upcoming wave of baby boomers retiring, referred to as the "silver tsunami". This will result in an enormous amount of open positions in the company and Pewlett Hackard needs to know what to expect as far as how many positions will need to be filled and which positions need to be filled in order to future proof the company. Specifically Pewlett Hackard wants to know how many employees will be retiriny by their company title and which current employees are eligible to participate in the new mentorship program. 
 
 ## Resources
-Data Source: departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv
-Software; SQL, Postgres/pgAdmin 11.16
+Data Source: departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv. 
+Software: SQL, Postgres/pgAdmin 11.16
 
 ## Results
 
