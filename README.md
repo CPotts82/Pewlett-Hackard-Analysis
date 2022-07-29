@@ -95,7 +95,8 @@ The mentorship_eligibility table only accounted for employees that were born in 
 
 ![Mentorship Eligible 1965](https://user-images.githubusercontent.com/106348899/181677394-35626e93-28fc-454f-ae8f-4a836dd13a5c.png)
 
-Due to the fact that the mentorship_eligibility only accounted for employees born in 1965, another table was made to expand those birhtdates from 1962 to 1965.  There are most likely other employees that are eligible for mentorship born around 1965 as well.  To make sure there were enough retirement ready mentors for the mentorship candidates, the data was expanded to include birthdates of employees between 01-01-1962 and 12-31-1965. The table below displays this data:
+Due to the fact that the mentorship_eligibility only accounted for employees born in 1965, another table was made to expand those birhtdates from 1962 to 1965.  There are most likely other employees that are eligible for mentorship born around 1965 as well.  To make sure there were enough retirement ready mentors for the mentorship candidates, the data was expanded to include birthdates of employees between 01-01-1962 and 12-31-1965. The tables below show a side by side comparison of the mentorship eligible candidates compared with the total number of retirement ready employees.  The table on the left is the same table from, the retiring_titles talble and the table on the right is the new table with the expanded mentorship eligibility data including eligible employees born between 1962 and 1965.  They are put side by side for ease of comparison, see below:
 
-![Mentorship Expanded Eligibility](https://user-images.githubusercontent.com/106348899/181678326-3547d623-263a-4c44-a4d1-5c6614d14737.png)
+![Comparison](https://user-images.githubusercontent.com/106348899/181679464-b4a5fbbc-65bf-4245-bce2-e4c0c65f3293.png)
+
 
