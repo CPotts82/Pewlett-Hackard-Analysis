@@ -77,8 +77,7 @@ ORDER BY emp_no;
 
 The first 10 lines of the mentorship_eligibility table are shown below:
 
-
-
+![Mentorship Eligibility](https://user-images.githubusercontent.com/106348899/181676530-4c01a6f0-e47d-4446-b408-5f7b3cbb0d88.png)
 
 ## Summary 
 ### Number of Roles to be Filled
