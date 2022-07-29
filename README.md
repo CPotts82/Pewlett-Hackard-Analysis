@@ -91,6 +91,10 @@ The above table is just the number or retirement ready employees with birthdays 
 
 ### Mentorship Numbers
 
-The mentorship_eligibility table just looked at employees that were born in 1965 to eligible for the new mentorship program.  Just comparing the eligible employees from 1965 to the overall retirement ready employees, the answer is yes, there are more than enough employees to mentor the eligible.  The following table shows the number of mentorship eligible employees that were born in 1965:
+The mentorship_eligibility table only accounted for employees that were born in 1965 to be eligible for the new mentorship program.  Just comparing the eligible employees from 1965 to the overall retirement ready employees, (compared to table above), the answer is yes, there are more than enough employees to mentor the eligible.  The following table shows the number of mentorship eligible employees that were born in 1965:
 
 ![Mentorship Eligible 1965](https://user-images.githubusercontent.com/106348899/181677394-35626e93-28fc-454f-ae8f-4a836dd13a5c.png)
+
+Due to the fact that the mentorship_eligibility only accounted for employees born in 1965, another table was made to expand those birhtdates from 1962 to 1965.  There are most likely other employees that are eligible for mentorship born around 1965 as well.  To make sure there were enough retirement ready mentors for the mentorship candidates, the data was expanded to include birthdates of employees between 01-01-1962 and 12-31-1965. The table below displays this data:
+
+
