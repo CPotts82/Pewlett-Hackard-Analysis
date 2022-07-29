@@ -53,6 +53,30 @@ ORDER BY "count" DESC;
 ```
 
 ### Employees Eligible for Mentorship Program
+To create the mentorship_elibility table the:
+  - information was pulled from the employees tables, department employee table and titles tables
+  - select columns from the department employee table and titles table were both joined to the employees table
+  - the 'Distint On' statement was used to select the first occurrence of the employee number
+  - the data was filtered to include only current employees whose birth dates are between 01-01-1965 and 12-31-1965
+  - the table was then ordered by employee number
+
+The query used to create the mentorship_eligibility table is included below:
+
+```--Create Mentorship Eligibility table
+SELECT DISTINCT ON (e.emp_no) e.emp_no, e.first_name, e.last_name, e.birth_date, de.from_date, de.to_date, t.title
+INTO mentorship_eligibility
+FROM employees as e
+LEFT JOIN dept_emp as de
+ON (e.emp_no = de.emp_no)
+LEFT JOIN titles as t
+ON (e.emp_no = t.emp_no)
+WHERE (de.to_date >= '9999-01-01')
+AND (e.birth_date BETWEEN '01-01-1965' AND '12-31-1965')
+ORDER BY emp_no;```
+
+The first 10 lines of the mentorship_eligibility table are shown below:
+
+
 
 
 ## Summary 
