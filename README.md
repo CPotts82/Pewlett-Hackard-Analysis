@@ -97,4 +97,5 @@ The mentorship_eligibility table only accounted for employees that were born in 
 
 Due to the fact that the mentorship_eligibility only accounted for employees born in 1965, another table was made to expand those birhtdates from 1962 to 1965.  There are most likely other employees that are eligible for mentorship born around 1965 as well.  To make sure there were enough retirement ready mentors for the mentorship candidates, the data was expanded to include birthdates of employees between 01-01-1962 and 12-31-1965. The table below displays this data:
 
+![Mentorship Expanded Eligibility](https://user-images.githubusercontent.com/106348899/181678326-3547d623-263a-4c44-a4d1-5c6614d14737.png)
 
