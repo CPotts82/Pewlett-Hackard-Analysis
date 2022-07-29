@@ -35,6 +35,9 @@ WHERE (de.to_date >= '9999-01-01')
 AND (e.birth_date BETWEEN '01-01-1965' AND '12-31-1965')
 ORDER BY emp_no;
 
+--Extra Queries Created for Written Analysis Below: 
+
+
 --Create Mentorship Eligibility Count Table
 SELECT COUNT (me.emp_no), me.title
 INTO mentorship_count
@@ -58,5 +61,24 @@ ORDER BY emp_no;
 SELECT COUNT (mee.emp_no), mee.title
 INTO mentorship_elig_expanded_count
 FROM mentorship_elig_expanded as mee
+GROUP BY "title"
+ORDER BY "count" DESC;
+
+--Create Retiree TAble with 1952 birthdates
+SELECT DISTINCT ON (e.emp_no) e.emp_no, e.first_name, e.last_name, e.birth_date, de.from_date, de.to_date, t.title
+INTO retiree_fiftytwo
+FROM employees as e
+LEFT JOIN dept_emp as de
+ON (e.emp_no = de.emp_no)
+LEFT JOIN titles as t
+ON (e.emp_no = t.emp_no)
+WHERE (de.to_date >= '9999-01-01')
+AND (e.birth_date BETWEEN '01-01-1952' AND '12-31-1952')
+ORDER BY emp_no;
+
+--Create Retiree 1952 Count table
+SELECT COUNT (rf.emp_no), rf.title
+INTO retiree52_count
+FROM retiree_fiftytwo as rf
 GROUP BY "title"
 ORDER BY "count" DESC;
