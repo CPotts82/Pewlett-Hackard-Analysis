@@ -11,9 +11,9 @@ Software: SQL, Postgres/pgAdmin 11.16
 ### Number of Employees Retiring By Title
 For this analysis 3 different queries were made to find and filter the results down to the final retiring_titles table. 
 - The first query created the "retirement_titles table:
-  - it pulled pertinent information from the employees table (created from employees.csv) and also from the titles table (created from titles.csv) and joined the tables
-  - This information was filtered by birthdates between 01-01-1952 and 12-31-1955
-  - Finally, this information was ordered by the employee number. 
+  - it pulled data from the employees table (created from employees.csv) and also from the titles table (created from titles.csv) and joined the tables
+  - This data was filtered by birthdates between 01-01-1952 and 12-31-1955
+  - Finally, the data was ordered by the employee number. 
 
 - The second query created the unique_titles table:
   - Using the 'Distint On' statement filtered the multiple titles that some employees had attached to their employee number down to the most recent title
@@ -24,7 +24,7 @@ For this analysis 3 different queries were made to find and filter the results d
   - Using 'Group by', the table was grouped by titles.
   - Using 'Order By', the table was ordered in descending order.
 
-This last table, retiring_titles, is where the total number of retirement ready employees organized by their company title was found. (This table is posted in the summary section below) Please see the images of the three queries that were created to transform and analyze the date to create our retiring_titles table:
+This last table, retiring_titles, is where the total number of retirement ready employees organized by their company title was found. (This table is posted in the summary section below) Please see the images of the three queries that were created to transform and analyze the data to create the retiring_titles table:
 
 ```
 --Create Retirement Titles Table
@@ -54,7 +54,7 @@ ORDER BY "count" DESC;
 
 ### Employees Eligible for Mentorship Program
 To create the mentorship_elibility table the:
-  - information was pulled from the employees tables, department employee table and titles tables
+  - data was pulled from the employees tables, department employee table and titles tables
   - select columns from the department employee table and titles table were both joined to the employees table
   - the 'Distint On' statement was used to select the first occurrence of the employee number
   - the data was filtered to include only current employees whose birth dates are between 01-01-1965 and 12-31-1965
@@ -99,7 +99,7 @@ Due to the fact that the mentorship_eligibility only accounted for employees bor
 
 ![Comparison](https://user-images.githubusercontent.com/106348899/181679464-b4a5fbbc-65bf-4245-bce2-e4c0c65f3293.png)
 
-The tables above show that in some departments there are more than enough retirement ready employees to mentor the eligible.  In other cases there are not enough mentors for mentorees. For example, there are 9285 retiring Engineers but there are 13,954 Engineers eligible for the mentorship program. This case is the same for the Assistant Engineers, Staff and Managers.  In some cases, the retirement ready are just a couple short of the mentor eligible.  In other cases like with the Staff, Engineers and Assistant Engineers the number of mentor eligible far outweighs the retirement ready. In this case, the Senior Engineers may be able to mentor some of the Engineers and Assistant Engineers since there is an enormous number of retiring Senior Engineers.  The same goes for the Senior Staff retirees.  There are so many retiring Senior Staff they could help mentor the Staff overflow.  The queries used to create the expanded mentorship eligibility table are shown below:
+The tables above show that in some departments there are more than enough retirement ready employees to mentor the eligible.  In other cases, there are not enough mentors for mentorees. For example, there are 9,285 retiring Engineers but there are 13,954 Engineers eligible for the mentorship program. This case is the same for the Assistant Engineers, Staff and Managers.  In some cases, the retirement ready are just a couple short of the mentor eligible.  In other cases, like with the Staff, Engineers and Assistant Engineers the number of mentor eligible far outweighs the retirement ready. In this case, the Senior Engineers may be able to mentor some of the Engineers and Assistant Engineers since there is an enormous number of retiring Senior Engineers.  The same goes for the Senior Staff retirees.  There are so many retiring Senior Staff they could help mentor the Staff overflow.  The queries used to create the expanded mentorship eligibility table are shown below:
 
 ```
 --Create new table Mentorship Eligibility for birth_dates from 01-01-1962 to 12-31-1965
