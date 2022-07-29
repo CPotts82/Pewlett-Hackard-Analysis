@@ -99,4 +99,6 @@ Due to the fact that the mentorship_eligibility only accounted for employees bor
 
 ![Comparison](https://user-images.githubusercontent.com/106348899/181679464-b4a5fbbc-65bf-4245-bce2-e4c0c65f3293.png)
 
+The tables above show that in some departments there are more than enough retirement ready employees to mentor the eligible.  In other cases there are not enough mentors for mentorees. For example, there are 9285 retiring Engineers but there are 13,954 Engineers eligible for the mentorship program. This case is the same for the Assistant Engineers, Staff and Managers.  In some cases, the retirement ready are just a couple short of the mentor eligible.  In other cases like with the Staff, Engineers and Assistant Engineers the number of mentor eligible far outweighs the retirement ready. In this case, the Senior Engineers may be able to mentor some of the Engineers and Assistant Engineers since there is an enormous number of retiring Senior Engineers.  The same goes for the Senior Staff retirees.  There are so many retiring Senior Staff they could help mentor the Staff overflow.  The query used to create the expanded mentorship eligibility table is shown below:
+
 
