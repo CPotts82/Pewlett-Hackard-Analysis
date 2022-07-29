@@ -72,7 +72,8 @@ LEFT JOIN titles as t
 ON (e.emp_no = t.emp_no)
 WHERE (de.to_date >= '9999-01-01')
 AND (e.birth_date BETWEEN '01-01-1965' AND '12-31-1965')
-ORDER BY emp_no;```
+ORDER BY emp_no;
+``` 
 
 The first 10 lines of the mentorship_eligibility table are shown below:
 
